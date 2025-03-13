@@ -51,7 +51,6 @@ class Program
 
     static void OnCancelKeyPress(object sender, ConsoleCancelEventArgs e)
     {
-        Console.WriteLine("Audio capture from specifed process is started, press CTRL + C to stop.");
 
         StopCaptureAsync();
 
