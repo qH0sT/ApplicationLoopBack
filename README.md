@@ -1,5 +1,5 @@
 # ApplicationLoopBack
- An cpp lib to capture specifed app's auido.
+ An C++ lib to capture specifed app's auido by it's PID number. And also sample C# app to showing usage.
 
  I made a .dll that I found in Microsoft's github repository and can be used as an .exe application. So I converted it .dll and event typed; you can use it in your C# programs via P/Invoke as an event-based method. So when you call the `StartCaptureAsync` method from the library from C#, an event is triggered continuously with audio data until you stop it. `StopCaptureAsync`. I needed something like this and it was not in the NAudio library and I developed it. I also contributed to the NAudio library. Maybe the NAudio developer will add it.
 
