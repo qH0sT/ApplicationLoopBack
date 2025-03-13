@@ -1,7 +1,7 @@
 # ApplicationLoopBack
  An C++ lib to capture specifed app's auido by it's PID number. And also sample C# app to showing usage.
 
- I made a .dll that I found in Microsoft's github repository and can be used as an .exe application. So I converted it .dll and event typed; you can use it in your C# programs via P/Invoke as an event-based method. So when you call the `StartCaptureAsync` method from the library from C#, an event is triggered continuously with audio data until you stop it. `StopCaptureAsync`. I needed something like this and it was not in the NAudio library and I developed it. I also contributed to the NAudio library. Maybe the NAudio developer will add it.
+ I made a .dll that originally as .exe and I found it in Microsoft's github repository and can be used as an .exe application. This program capture specifed app's auido by it's PID number. So I converted it .dll and event typed; you can use it in your C# programs via P/Invoke as an event-based method. So when you call the `StartCaptureAsync` method from the library from C#, an event is triggered continuously with audio data until you stop it. `StopCaptureAsync`. I needed something like this and it was not in the NAudio library and I developed it. I also contributed to the NAudio library. Maybe the NAudio developer will add it.
 
  ***Note that this sample requires Windows 10 build 20348 or later. (Windows 11)***
 
@@ -109,4 +109,14 @@ class Program
 }
 
 ````
+
+![Ekran görüntüsü 2025-03-13 161054](https://github.com/user-attachments/assets/5b73fa79-4cc1-486b-a6fd-60714ffac2a5)
+
+![Ekran görüntüsü 2025-03-13 161258](https://github.com/user-attachments/assets/84b21017-52f9-459e-bd94-294ddbf097d8)
+
+![Ekran görüntüsü 2025-03-13 161331](https://github.com/user-attachments/assets/88fde65c-bba6-4f02-bd67-99642da80063)
+
+
+
+
 Original .exe program repo of Microsoft: https://learn.microsoft.com/en-us/samples/microsoft/windows-classic-samples/applicationloopbackaudio-sample/
