@@ -44,7 +44,7 @@ class Program
 
         SetAudioCallback(OnAudioReceived); // we are declaring our audio output event in PCM format.
 
-        // 10560 was chrome's PID on my machine.
+        // 10560 was chrome's PID on my machine. You should change this on yours.
         StartCaptureAsync(10560, true, 1, 44100, 16); // Process PID number and includes process tree or not.
 
     }
