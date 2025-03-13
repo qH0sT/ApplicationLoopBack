@@ -3,7 +3,7 @@
 
  I made a .dll that originally as .exe and I found it in Microsoft's github repository and can be used as an .exe application. This program capture specifed app's auido by it's PID number. So I converted it .dll and event typed; you can use it in your C# programs via P/Invoke as an event-based method. So when you call the `StartCaptureAsync` method from the library from C#, an event is triggered continuously with audio data until you stop it. `StopCaptureAsync`. I needed something like this and it was not in the NAudio library and I developed it. I also contributed to the NAudio library. Maybe the NAudio developer will add it.
 
- ***Note that this sample requires Windows 10 build 20348 or later. (Windows 11)***
+ ***Note that library requires Windows 10 build 20348 or later. (Windows 11)***
 
 ````cs
 using System.Runtime.InteropServices;
